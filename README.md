@@ -12,8 +12,8 @@ I showed id for just test purpose. In future we have to update the project becau
 Additionally I have message class which I defined my status messages for my application.
 If we want more validation we can update our Validation class (ValidateToDoTask method)
 
-3. I have ToDoApi (ASP.NET Core Web Api) project (have referance to MemoryStorage project) where I have ToDoController using my Reposity class methods (from my MemoryStorage project).
-I have CRUD methods whcih just call corresponding methods from Reposity class. 
+3. I have ToDoApi (ASP.NET Core Web Api) project (have referance to MemoryStorage project) where I have ToDoController using my Repository class methods (from my MemoryStorage project).
+I have CRUD methods whcih just call corresponding methods from Repository class. 
 
 4. I have ToDoTest project which is xUnit test project where I have valid Unit tests for repository class which placed in MemoryStorage project. 
 So Test project have referance to Memory Storage project
