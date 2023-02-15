@@ -1,0 +1,12 @@
+C:\projects\ToDoApplication\MemoryStorageClass\obj\Debug\net6.0\MemoryStorageClass.csproj.AssemblyReference.cache
+C:\projects\ToDoApplication\MemoryStorageClass\obj\Debug\net6.0\MemoryStorageClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\ToDoApplication\MemoryStorageClass\obj\Debug\net6.0\MemoryStorageClass.AssemblyInfoInputs.cache
+C:\projects\ToDoApplication\MemoryStorageClass\obj\Debug\net6.0\MemoryStorageClass.AssemblyInfo.cs
+C:\projects\ToDoApplication\MemoryStorageClass\obj\Debug\net6.0\MemoryStorageClass.csproj.CoreCompileInputs.cache
+C:\projects\ToDoApplication\MemoryStorageClass\bin\Debug\net6.0\MemoryStorageClass.deps.json
+C:\projects\ToDoApplication\MemoryStorageClass\bin\Debug\net6.0\MemoryStorageClass.dll
+C:\projects\ToDoApplication\MemoryStorageClass\bin\Debug\net6.0\ref\MemoryStorageClass.dll
+C:\projects\ToDoApplication\MemoryStorageClass\bin\Debug\net6.0\MemoryStorageClass.pdb
+C:\projects\ToDoApplication\MemoryStorageClass\obj\Debug\net6.0\MemoryStorageClass.dll
+C:\projects\ToDoApplication\MemoryStorageClass\obj\Debug\net6.0\ref\MemoryStorageClass.dll
+C:\projects\ToDoApplication\MemoryStorageClass\obj\Debug\net6.0\MemoryStorageClass.pdb

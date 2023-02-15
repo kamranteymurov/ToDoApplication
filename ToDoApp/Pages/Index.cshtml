@@ -1,0 +1,113 @@
+﻿@page
+@using ToDoApplication.Models
+@using System.Text.RegularExpressions
+@model ToDoApp.Pages.ReadTasksModel
+@{
+    @if (Model.PostSuccess)
+    {
+        <div class="alert alert-success">@Model.responseBody</div>
+    }
+    else if (Model.PostSuccess == false && ModelState.Count > 0)
+    {
+        <div class="alert alert-danger">@Model.responseBody</div>
+    }
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Task Name</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (ViewData["toDoTasks"] != null)
+            {
+                @foreach (var task in (List<ToDoTask>)ViewData["toDoTasks"])
+                {
+                    <div class="table-responsive">
+                    <tr>
+                        <form method="post">
+                            <input type="hidden" name="id" value="@task.Id" readonly />
+                        <td>@task.Id</td>
+                        <td class="edit-mode">
+                            <input type="text" class="form-control" name="taskName" value="@task.Name" required />
+                        </td>
+                        <td>
+                            <select class="form-control" name="priority">
+                                        @foreach (var option in Html.GetEnumSelectList<PriorityTypes>())
+                                        {
+                                            if (option.Text == task.Priority.ToString())
+                                            {
+                                        <option value="@option.Value" selected>@Regex.Replace(option.Text, "(?<!^)([A-Z])", " $1")</option>
+                                            }
+                                            else
+                                            {
+                                        <option value="@option.Value">@Regex.Replace(option.Text, "(?<!^)([A-Z])", " $1")</option>
+                                            }
+                                        }
+                            </select>
+                        </td>
+                        <td>
+                            <select class="form-control" name="status">
+                                        @foreach (var option in Html.GetEnumSelectList<StatusTypes>())
+                                        {
+                                            if (option.Text == task.Status.ToString())
+                                            {
+                                        <option value="@option.Value" selected>@Regex.Replace(option.Text, "(?<!^)([A-Z])", " $1")</option>
+                                            }
+                                            else
+                                            {
+                                        <option value="@option.Value">@Regex.Replace(option.Text, "(?<!^)([A-Z])", " $1")</option>
+                                            }
+                                        }
+                            </select>
+                        </td>
+                        <td>
+                            <form method="post">
+                                <input type="hidden" name="id" value="@task.Id" />
+                                <input type="hidden" name="taskName" value="@task.Name" />
+                                <input type="hidden" name="priority" value="@task.Priority" />
+                                <input type="hidden" name="status" value="@task.Status" />
+                                <button type="submit" class="save-button btn btn-primary" asp-page-handler=""> Save </button>
+                                <button type="submit" class="delete-button btn btn-danger" asp-page-handler="delete"> Delete </button>
+                            </form>
+                        </td>
+                        </form>
+                    </tr>
+                    </div>
+                }
+            }
+            <form method="post">
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input type="text" class="form-control" name="Name" placeholder="Enter Task Name" required />
+                </td>
+                <td>
+                    <select class="form-control" name="priority" >
+                            @foreach (var option in Html.GetEnumSelectList<PriorityTypes>())
+                            {
+                            <option value="@option.Value">@Regex.Replace(option.Text, "(?<!^)([A-Z])", " $1")</option>
+                            }
+                    </select>
+                </td>
+                <td>
+                    <select class="form-control" name="status" >
+                            @foreach (var option in Html.GetEnumSelectList<StatusTypes>())
+                            {
+                            <option value="@option.Value">@Regex.Replace(option.Text, "(?<!^)([A-Z])", " $1")</option>
+                            }
+                    </select>
+                </td>
+                <td>
+                    <button type="submit" class="btn btn-primary" asp-page-handler="add">Add Task</button>
+                </td>
+                <td></td>
+            </tr>
+            </form>
+        </tbody>
+    </table>
+}

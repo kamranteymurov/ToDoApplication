@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1beb7832-6f4b-4219-abdd-70cdac565809": {
+      "ProjectGuid": "1beb7832-6f4b-4219-abdd-70cdac565809",
+      "DisplayName": "ToDoAPI",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "f710a540-f52e-441f-9b1f-312b678edd08": {
+      "ProjectGuid": "f710a540-f52e-441f-9b1f-312b678edd08",
+      "DisplayName": "ToDoTest",
+      "ColorIndex": 1
+    },
+    "52654d5d-3572-4114-afd9-b8bde5745768": {
+      "ProjectGuid": "52654d5d-3572-4114-afd9-b8bde5745768",
+      "DisplayName": "ToDoTest",
+      "ColorIndex": 2
+    },
+    "98506342-b9c1-4b84-b277-24541772c1e0": {
+      "ProjectGuid": "98506342-b9c1-4b84-b277-24541772c1e0",
+      "DisplayName": "ToDoTest",
+      "ColorIndex": 3
+    },
+    "8ac4ff17-252a-47d2-b1b3-e174b4d3dd6e": {
+      "ProjectGuid": "8ac4ff17-252a-47d2-b1b3-e174b4d3dd6e",
+      "DisplayName": "ToDoApp",
+      "ColorIndex": 4
+    },
+    "0a4b2b91-4187-49c5-94a4-1fc0a4d73834": {
+      "ProjectGuid": "0a4b2b91-4187-49c5-94a4-1fc0a4d73834",
+      "DisplayName": "MemoryStorageClass",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}
